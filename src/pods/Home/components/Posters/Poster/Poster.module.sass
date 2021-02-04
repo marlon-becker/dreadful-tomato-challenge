@@ -1,0 +1,42 @@
+.poster
+  position: relative
+  opacity: 0.8
+  display: block
+  transition: var(--transition-duration) var(--transition-easing)
+  &:hover
+    opacity: 1
+  img
+    max-width: 100%
+
+.title
+  background: var(--primary-color)
+  bottom: 0
+  color: var(--white-color)
+  display: block
+  font-size: 1.5rem
+  font-weight: bold
+  height: 4rem
+  left: 0
+  line-height: 4rem
+  padding-left: 2rem
+  position: absolute
+  width: 100%
+
+.imageContainer
+  position: relative
+  max-width: 850px
+  &:after
+    content: ''
+    display: block
+    height: 0
+    width: 100%
+    padding-bottom: 84.68786808009423%
+  & > *
+    position: absolute
+    display: block
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+
+

@@ -1,0 +1,24 @@
+$breakpoint-sm: 460px
+$breakpoint-md: 672px
+$breakpoint-lg: 1056px
+$breakpoint-xl: 1312px
+
+// Small devices
+@mixin sm
+  @media only screen and (max-width: $breakpoint-sm)
+    @content
+
+// Medium devices
+@mixin md
+  @media (max-width: #{$breakpoint-md})
+    @content
+
+// Large devices
+@mixin lg
+  @media (max-width: #{$breakpoint-lg})
+    @content
+
+// Extra large devices
+@mixin xl
+  @media (max-width: #{$breakpoint-xl})
+    @content

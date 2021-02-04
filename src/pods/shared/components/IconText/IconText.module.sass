@@ -1,0 +1,16 @@
+@import '../../../../styles/mixins.sass'
+
+$max-width: 768
+
+.container
+  display: flex
+  align-items: center
+  img
+    margin-right: var(--spacing-xs)
+    height: 1.5rem
+    @include md
+      height: 1.125rem
+  @include lg
+    span
+      display: none
+

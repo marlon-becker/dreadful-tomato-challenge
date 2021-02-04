@@ -1,0 +1,16 @@
+.filters
+  transition: var(--transition-duration) var(--transition-easing)
+  cursor: pointer
+  user-select: none
+
+.active
+  background: rgba(255, 255, 255, .2)
+  position: relative
+  &:after
+    background: var(--primary-color)
+    bottom: 0
+    content: ''
+    height: 4px
+    left: 0
+    position: absolute
+    width: 100%

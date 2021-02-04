@@ -1,0 +1,25 @@
+@import '../../../../../../styles/mixins'
+
+.navigations
+  display: flex
+  align-items: center
+  height: 100%
+  li
+    color: var(--white-color)
+    padding: 0 var(--spacing-sm)
+    line-height: 2rem
+    font-weight: bold
+    display: flex
+    align-items: center
+    height: 100%
+    @include lg
+      padding: 0 var(--spacing-xs)
+    @include md
+      padding: 0 var(--spacing-2xs)
+    @include sm
+      padding: 0 var(--spacing-2xs)
+    a
+      color: var(--white-color)
+      text-decoration: none
+    img
+      margin-left: var(--spacing-xs)

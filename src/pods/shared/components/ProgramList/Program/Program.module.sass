@@ -1,0 +1,42 @@
+.image
+  max-width: 100%
+
+.gridListElement
+  background-size: cover
+  max-height: 120%
+  padding-bottom: 120%
+  position: relative
+  overflow: hidden
+  background-color: #444444
+  &:hover
+    .content
+      top: auto
+      bottom: 0
+      h2
+        margin-bottom: 0
+
+.content
+  position: absolute
+  top: calc(100% - 2rem)
+  left: 0
+  padding: 0.5rem
+  background: var(--black-color-opacity)
+  font-size: var(--font-size-xs)
+  h2
+    font-size: 1.125rem
+    font-weight: bold
+    height: 1.5rem
+    line-height: 1.5rem
+    overflow: hidden
+    top: -0.125rem
+    position: relative
+    margin-bottom: var(--spacing-sm)
+
+.date
+  display: flex
+  align-items: center
+  font-size: var(--font-size-xs)
+  font-weight: bold
+  svg
+    fill: var(--primary-color)
+    margin-right: var(--spacing-2xs)

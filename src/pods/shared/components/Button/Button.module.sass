@@ -1,0 +1,18 @@
+@import "../../../../styles/mixins"
+
+.button
+  background: var(--primary-color)
+  border-radius: var(--border-radius)
+  color: var(--white-color)
+  display: inline-block
+  font-size: 1rem
+  line-height: 1rem
+  padding: var(--spacing-xs) var(--spacing-xl)
+  text-decoration: none
+  font-weight: bold
+  @include md
+    padding: var(--spacing-xs) var(--spacing-md)
+    font-size: 0.75rem
+
+
+

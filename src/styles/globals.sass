@@ -1,0 +1,55 @@
+@import '~carbon-components/scss/globals/scss/styles.scss'
+
+$base-size: 16px
+$font-size-xs: 0.875rem
+$font-size-l: 1.5rem
+
+$transition-duration: 0.2s
+$transition-easing: ease-in-out
+
+$border-radius: 1rem
+
+$primary-color: #c42521
+$white-color: #ffffff
+$bg-color: #000000
+$bg-content: #131313
+$black-color-opacity: rgba(0, 0, 0, .6)
+$grey-color: #444
+
+body
+  --primary-color: #{$primary-color}
+  --white-color: #{$white-color}
+  --black-color-opacity: #{$black-color-opacity}
+  --grey-color: #{$grey-color}
+  --bg-color: #{$bg-color}
+  --bg-content: #{$bg-content}
+  --spacing-2xs: #{$spacing-2xs}
+  --spacing-xs: #{$spacing-xs}
+  --spacing-sm: #{$spacing-sm}
+  --spacing-md: #{$spacing-md}
+  --spacing-xl: #{$spacing-xl}
+  --border-radius: #{$border-radius}
+  --font-size-xs: #{$font-size-xs}
+  --font-size-l: #{$font-size-l}
+  --transition-easing: #{$transition-easing}
+
+@media (prefers-reduced-motion: reduce)
+  body
+    --transition-duration: 0
+
+@media (prefers-reduced-motion: no-preference)
+  body
+    --transition-duration: #{$transition-duration}
+
+html
+  scroll-behavior: smooth
+
+body
+  font-size: $base-size
+  background: var(--bg-color)
+  color: var(--white-color)
+
+h1
+  font-size: var(--font-size-l)
+  margin: 2rem 0 0
+  font-weight: bold

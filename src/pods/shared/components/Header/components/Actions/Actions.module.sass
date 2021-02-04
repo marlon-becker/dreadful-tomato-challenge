@@ -1,0 +1,31 @@
+@import '../../../../../../styles/mixins'
+
+.actions
+  display: flex
+  align-items: center
+  height: 100%
+  li
+    align-items: center
+    color: var(--white-color)
+    display: flex
+    font-weight: bold
+    height: 100%
+    line-height: 2rem
+    padding: 0 var(--spacing-sm)
+    position: relative
+    @include lg
+      padding: 0 var(--spacing-xs)
+    @include md
+      padding: 0 var(--spacing-2xs)
+    &:before
+      border-left: 1px solid var(--white-color)
+      content: ''
+      height: 60%
+      left: 0
+      position: absolute
+      top: 20%
+    a
+      color: var(--white-color)
+      text-decoration: none
+    img
+      margin-left: var(--spacing-xs)
